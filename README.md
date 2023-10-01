@@ -71,3 +71,43 @@ python mix.py
 Note: Near line 220 in `mix.py`, uncomment the line corresponding to the world that was launched in Gazebo.
 
 Remember to speak after running the Python code to interact with the social navigation robot in the simulation. Enjoy exploring the different environments and social interactions!
+
+
+
+
+### Leg Tracker Dependencies
+
+Before running the leg tracker code, make sure you have the following dependencies installed:
+
+To add the installation instructions for SciPy and pykalman to your README file, you can include the following section:
+
+```markdown
+## Leg Tracker Dependencies
+
+Before running the leg tracker code, make sure you have the following dependencies installed:
+
+### SciPy
+
+```bash
+sudo apt install python-scipy
+```
+
+### pykalman
+
+You can install pykalman by following one of these methods:
+
+- Official pykalman Installation Guide: [http://pykalman.github.io/#installation](http://pykalman.github.io/#installation)
+
+or
+
+- Using pip:
+
+```bash
+sudo pip install pykalman
+```
+
+Ensure that you have these dependencies installed to successfully run the leg tracker code.
+```
+
+This section provides clear instructions on how to install SciPy and pykalman, either via apt or pip, before running the leg tracker code. Users can follow these instructions to meet the required dependencies.
+
