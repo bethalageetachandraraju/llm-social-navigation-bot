@@ -6,6 +6,8 @@
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find gpt_robot)/worlds/hall.world"/>
+  <!--  <arg name="world_name" value="$(find gpt_robot)/worlds/box.world"/>   -->
+   <!--  <arg name="world_name" value="$(find gpt_robot)/worlds/square.world"/>  -->
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
