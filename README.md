@@ -23,11 +23,7 @@ git clone https://github.com/bethalageetachandraraju/llm-social-navigation-bot
 
 For additional information about the leg_tracker, refer to the following link: [https://github.com/angusleigh/leg_tracker](https://github.com/angusleigh/leg_tracker)
 
-## Gazebo Configuration
 
-### Robot Configuration
-
-### Environment Configuration
 
 ## Run Commands
 
@@ -70,7 +66,11 @@ python mix.py
 
 Note: Near line 220 in `mix.py`, uncomment the line corresponding to the world that was launched in Gazebo.
 
-Remember to speak after running the Python code to interact with the social navigation robot in the simulation. Enjoy exploring the different environments and social interactions!
+### Remember to speak after running the Python code to interact with the social navigation robot in the simulation. Enjoy exploring the different environments and social interactions!
+
+
+
+
 
 
 
