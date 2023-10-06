@@ -42,6 +42,8 @@ source devel/setup.bash
 ### Turtlebot setup
 After creating thw workspace, follow this lonk for downloading the turtlebot packages
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
+
+and download the packages into **src folder of the workspace**
 ### Start Gazebo Command
 
 To start the Gazebo simulation, use the following command:
