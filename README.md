@@ -8,6 +8,7 @@ This repository contains instructions and code for simulating a social navigatio
 - Nvidia driver version: RTX 3050 Ti (Not mandatory)
 - Gazebo version: Gazebo 11
 - Python version: Python 3.8.10
+- CUDA version: 10.1 
 
 ## GitHub Links and Download
 
