@@ -44,6 +44,52 @@ After creating thw workspace, follow this lonk for downloading the turtlebot pac
 https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#gazebo-simulation
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 and download the packages into **src folder of the workspace**
+## Parameters config on Turtloebot
+Tuttlebot files are found here
+```bash
+/opt/ros/noetic/share/turtlebot3_description
+```
+go to this directory there we can find the gazebo files for the respective turtlebot model that you are using, in my case im using **waffel_pi** so im changing modifing the **turtlebot3_waffle_pi.gazebo.xacro**
+add this part of code in place of base_scan or change the parameters
+and also dont forget to turn of the visualization here 
+
+  **<xacro:arg name="laser_visual"  default="true"/>**
+
+```bash
+  <gazebo reference="base_scan">
+    <material>Gazebo/FlatBlack</material>
+    <sensor type="gpu_ray" name="lds_lfcd_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>$(arg laser_visual)</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1440</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.57079633</min_angle>
+            <max_angle>1.57079633</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.120</min>
+          <max>10</max>
+          <resolution>0.015</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_gpu_laser.so">
+        <topicName>scan</topicName>
+        <frameName>base_scan</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+```
+
 ### Start Gazebo Command
 
 To start the Gazebo simulation, use the following command:
