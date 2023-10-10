@@ -12,6 +12,7 @@ This repository contains instructions and code for simulating a social navigatio
 - Torch version: 2.0.1+cu117
 
   And for **text to speech** i used  **pyttsx3** 2.90 for more documentation https://pypi.org/project/pyttsx3/
+
   For **Speech Recognition** i used python speech recognition **(SpeechRecognition 3.10.0)** library version 3.10  documentation: https://pypi.org/project/SpeechRecognition/
 
 ## GitHub Links and Download
