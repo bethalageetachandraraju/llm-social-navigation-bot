@@ -96,6 +96,16 @@ and also dont forget to turn of the visualization here
   </gazebo>
 ```
 
+### Gazebo actor setup
+use the following link _https://github.com/blackcoffeerobotics/gazebo-ros-actor-plugin_ for setting up the actor control, So that we can control the actor(human) with twist messages.
+Follow the above git hub link and clone the repo in the src folder of workspace and follow the instruction and build it with catkin_make. 
+After running the below command for lunching the _robot.launch_ in rostopic list we will see the topic **cmd_velp** to control the actor in gazebo
+```bash
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py remap cmd_vel:= cmd_velp
+```
+with this command we can control the motion of the actor.
+
+
 ### Start Gazebo Command
 
 To start the Gazebo simulation, use the following command:
