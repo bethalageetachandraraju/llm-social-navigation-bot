@@ -2,6 +2,22 @@
 
 This repository contains instructions and code for simulating a social navigation robot using Gazebo and ROS. The robot is simulated in different environments and utilizes leg tracking for social interaction. Below, you will find information on setting up the environment, running the simulation, and accessing the code.
 
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@misc{wen2024enhancingsociallyawarerobotnavigation,
+  title={Enhancing Socially-Aware Robot Navigation through Bidirectional Natural Language Conversation}, 
+  author={Congcong Wen and Yifan Liu and Geeta Chandra Raju Bethala and Zheng Peng and Hui Lin and Yu-Shen Liu and Yi Fang},
+  year={2024},
+  eprint={2409.04965},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2409.04965}
+}
+
+
 ## Environment Requirements
 
 - ROS version: Noetic
