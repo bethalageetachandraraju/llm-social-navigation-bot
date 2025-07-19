@@ -1,4 +1,10 @@
-# llm-social-navigation-bot
+# Socially-Aware Robot Navigation Enhanced by Bidirectional Natural Language Conversations Using Large Language Models
+
+[🔗 Project Website](https://hsacllm.github.io/)
+
+**🎉 Accepted to IROS 2025**
+
+---
 
 This repository contains instructions and code for simulating a social navigation robot using Gazebo and ROS. The robot is simulated in different environments and utilizes leg tracking for social interaction. Below, you will find information on setting up the environment, running the simulation, and accessing the code.
 
@@ -16,7 +22,7 @@ If you use this work, please cite:
   primaryClass={cs.RO},
   url={https://arxiv.org/abs/2409.04965}
 }
-```
+
 
 ## Environment Requirements
 
@@ -189,7 +195,6 @@ sudo pip install pykalman
 ```
 
 Ensure that you have these dependencies installed to successfully run the leg tracker code.
-```
 
-This section provides clear instructions on how to install SciPy and pykalman, either via apt or pip, before running the leg tracker code. Users can follow these instructions to meet the required dependencies.
+
 
